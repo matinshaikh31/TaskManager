@@ -1,12 +1,11 @@
 // CalendarPage.jsx
-import { Calendar, momentLocalizer } from 'react-big-calendar';
-import { format, parse, startOfWeek, getDay } from 'date-fns';
+import { Calendar, momentLocalizer } from 'react-big-calendar';;
 import 'react-big-calendar/lib/css/react-big-calendar.css';
 import { useState } from 'react';
-import './custom-calendar.css'; // We'll style to match your UI here
-import moment from 'moment'; // Import moment
+import './custom-calendar.css';
+import moment from 'moment'; 
 
-const localizer = momentLocalizer(moment); // Initialize with moment
+const localizer = momentLocalizer(moment);
 
 const events = [
   {

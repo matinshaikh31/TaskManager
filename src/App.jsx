@@ -1,4 +1,3 @@
-// App.jsx
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import { useState } from "react";
 import Sidebar from "./components/Sidebar";
@@ -17,13 +16,13 @@ function App() {
   return (
     <Router>
       <div className="flex h-screen overflow-hidden">
-        {/* Header for Mobile */}
+      
         <Header toggleSidebar={toggleSidebar} />
 
-        {/* Sidebar */}
+
         <Sidebar isOpen={isSidebarOpen} closeSidebar={closeSidebar} />
 
-        {/* Main Content */}
+     
         <div className="flex-1 p-6 pt-20 md:pt-6 overflow-y-auto w-full">
           <Routes>
             <Route path="/" element={<TodayPage />} />
