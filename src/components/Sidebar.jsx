@@ -12,7 +12,7 @@ import { BsListCheck } from "react-icons/bs";
 export default function Sidebar({ isOpen, closeSidebar }) {
   const menuItems = [
     { name: "Upcoming", count: 12, path: "/upcoming", icon: <HiOutlineLightBulb /> },
-    { name: "Today", count: 5, path: "/today", icon: <BsListCheck /> },
+    { name: "Today", count: 5, path: "/", icon: <BsListCheck /> },
     { name: "Calendar", path: "/calendar", icon: <FiCalendar /> },
     { name: "Sticky Wall", path: "/sticky-wall", icon: <FiGrid /> },
   ];
