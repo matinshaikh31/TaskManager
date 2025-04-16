@@ -25,8 +25,8 @@ export default function Sidebar({ isOpen, closeSidebar }) {
 
   return (
     <div
-      className={`fixed top-0 left-0 h-full w-[280px] bg-white border-r border-zinc-100  z-30 transform transition-transform duration-300 ease-in-out
-        md:relative md:translate-x-0 md:block
+      className={`fixed top-0 left-0 h-full overflow-y-auto  w-[280px] bg-white border-r border-zinc-100  z-30 transform transition-transform duration-300 ease-in-out
+        md:relative md:translate-x-0 md:block 
         ${isOpen ? "translate-x-0" : "-translate-x-full"}`}
     >
       {/* Header (Mobile close button) */}
