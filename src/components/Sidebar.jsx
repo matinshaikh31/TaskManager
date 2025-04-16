@@ -57,7 +57,7 @@ export default function Sidebar({ isOpen, closeSidebar }) {
             <h2 className="mb-4 text-sm text-stone-500">TASKS</h2>
             <ul className="p-0 m-0 flex flex-col gap-2">
               {menuItems.map((item) => (
-                <NavLink
+                <Link
                   to={item.path}
                   key={item.name}
                   className={({ isActive }) =>
@@ -76,7 +76,7 @@ export default function Sidebar({ isOpen, closeSidebar }) {
                       {item.count}
                     </span>
                   )}
-                </NavLink>
+                </Link>
               ))}
             </ul>
           </div>
