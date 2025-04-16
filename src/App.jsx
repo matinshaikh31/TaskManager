@@ -16,20 +16,16 @@ function App() {
   return (
     <Router>
       <div className="flex h-screen overflow-hidden">
-      
         <Header toggleSidebar={toggleSidebar} />
-
 
         <Sidebar isOpen={isSidebarOpen} closeSidebar={closeSidebar} />
 
-     
         <div className="flex-1 p-6 pt-20 md:pt-6 overflow-y-auto w-full">
           <Routes>
             <Route path="/" element={<TodayPage />} />
-            <Route path="/today" element={<TodayPage />} />
-            <Route path="/calendar" element={<CalendarPage />} />
-            <Route path="/sticky-wall" element={<StickWallPage />} />
-            <Route path="/upcoming" element={<UpcomingPage />} />
+            <Route path="calendar" element={<CalendarPage />} />
+            <Route path="sticky-wall" element={<StickWallPage />} />
+            <Route path="upcoming" element={<UpcomingPage />} />
           </Routes>
         </div>
       </div>
